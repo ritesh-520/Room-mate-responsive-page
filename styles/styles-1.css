@@ -354,7 +354,7 @@ img{
     grid-template-columns: repeat(2,1fr);
 }
 .grid-footer p:nth-last-of-type(1), .grid-footer i:nth-last-of-type(1){
-    display: none;
+    display: none !important;
 }
 .grid-footer p{
     font-size:16px;
@@ -400,7 +400,7 @@ img{
    .form-card{
     width: 80%;
     height: 100%;
-    top:0px;
+    /* top:7px; */
     margin:auto;
     /* left:350px; */
     /* bottom:0px; */
@@ -411,7 +411,7 @@ img{
     /* width:fit-content */
    }
    .statistics.grid-3{
-    margin-top: 100px;
+    margin-top: 150px;
    }
    .grid-images{
     grid-template-columns: repeat(1,1fr);
@@ -427,4 +427,17 @@ img{
      width:270px ;
 
    }
+   .grid-footer{
+    grid-template-rows: 1fr ;
+    gap:10px;
+    width:100vw;
+    box-sizing: border-box;
+    text-wrap: wrap;
+    grid-template-columns: 1fr;
+   }
+   
+   .grid-footer div i,   .grid-footer div p{
+font-size:25px;
+   }
+
 }
